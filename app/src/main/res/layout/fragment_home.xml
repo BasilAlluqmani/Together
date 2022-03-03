@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black"
+        tools:context=".Home">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fab_addButtonColorNormal="@color/purple_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_icon="@drawable/camera"
+                app:fab_title="Photo"
+                android:id="@+id/icon_photo"
+                app:fab_colorNormal="@color/teal_200" />
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_icon="@drawable/video"
+                app:fab_title="Video"
+                android:id="@+id/icon_video"
+                app:fab_colorNormal="@color/teal_200" />
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_icon="@drawable/text"
+                app:fab_title="Text"
+                android:id="@+id/icon_text"
+                app:fab_colorNormal="@color/teal_200" />
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
