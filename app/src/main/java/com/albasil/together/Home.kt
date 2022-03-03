@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.albasil.together.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -34,15 +35,19 @@ class Home : Fragment() {
 
 
         binding.iconPhoto.setOnClickListener {
-            makeToast("Photo")
+
+            findNavController().navigate(R.id.action_home2_to_photoFragment)
         }
 
         binding.iconText.setOnClickListener {
-            makeToast("Text")
+
+            findNavController().navigate(R.id.textFragment)
         }
 
         binding.iconVideo.setOnClickListener {
-            makeToast("Video")
+
+            findNavController().navigate(R.id.action_home2_to_videoFragment)
+
         }
     }
 

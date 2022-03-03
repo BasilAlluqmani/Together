@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/together/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/together/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/together/app/src/main/res/layout/fragment_text.xml" value="0.12718204488778054" />
+        <entry key="..\:/together/app/src/main/res/layout/photo_fragment.xml" value="0.25" />
+        <entry key="..\:/together/app/src/main/res/layout/video_fragment.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -9,5 +9,47 @@
         android:id="@+id/home2"
         android:name="com.albasil.together.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_textFragment"
+            app:destination="@id/textFragment" />
+        <action
+            android:id="@+id/action_home2_to_photoFragment"
+            app:destination="@id/photoFragment" />
+        <action
+            android:id="@+id/action_home2_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textFragment"
+        android:name="com.albasil.together.TextFragment"
+        android:label="fragment_text"
+        tools:layout="@layout/fragment_text" >
+        <action
+            android:id="@+id/action_textFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/nav"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.albasil.together.PhotoFragment"
+        android:label="photo_fragment"
+        tools:layout="@layout/photo_fragment" >
+        <action
+            android:id="@+id/action_photoFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/nav"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.albasil.together.VideoFragment"
+        android:label="video_fragment"
+        tools:layout="@layout/video_fragment" >
+        <action
+            android:id="@+id/action_videoFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/nav" />
+    </fragment>
 </navigation>
