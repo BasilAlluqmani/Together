@@ -23,6 +23,8 @@ class TextFragment : Fragment() {
     ): View? {
         binding = FragmentTextBinding.inflate(inflater, container, false)
         return binding.root
+
+
     }
 
 
